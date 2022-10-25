@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+// q1. 找出數字字串中的最大質數
 public class q1 {
     public static void main(String[] args) throws Exception {
         System.out.print("請輸入正整數：");
