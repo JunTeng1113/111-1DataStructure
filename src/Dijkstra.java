@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 // 第16週 20221228_Dijkstra
+// 列出所有點與點之間的最短路線長度
 public class Dijkstra {
     
     static class Edge {
