@@ -13,7 +13,9 @@ class Node {
 
 public class RBTree {
 
-    Node root;
+    public Node root;
+    public RBTree() { root = null; }
+
     public void insert(int data) {
         root = insertElement(root, data);
     }
@@ -101,19 +103,28 @@ public class RBTree {
     }
 
     public static void main(String[] args) {
-        RBTree rbtree = new RBTree();
-        rbtree.insert(3);
-        rbtree.insert(9);
-        rbtree.insert(55);
-        rbtree.insert(24);
-        rbtree.insert(31);
-        rbtree.insert(28);
-        rbtree.insert(53);
-        rbtree.inOrder(rbtree.root);
+        int i;            
+        int[] array = { 3, 9, 55, 24, 31, 28, 53 };
+
+        RBTree obj = new RBTree();
+        
+        System.out.print("Original Array:");
+        for ( i = 0; i < array.length; i++ ) {
+                System.out.print("[" + array[i] + "] ");
+                obj.insert(array[i]);
+        }
+        System.out.println();
+
+        System.out.print("InOrder:");
+        obj.inOrder(obj.root);
         System.out.println(); 
-        rbtree.preOrder(rbtree.root);
+
+        System.out.print("PreOrder:");
+        obj.preOrder(obj.root);
         System.out.println(); 
-        rbtree.postOrder(rbtree.root);
+        
+        System.out.print("PostOrder:");
+        obj.postOrder(obj.root);
         System.out.println(); 
     }
 }
