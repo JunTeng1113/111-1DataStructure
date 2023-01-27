@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 class InsertSort
 {
 	static int temp = 0;

@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 class sorting 
 {
 	int temp = 0;
