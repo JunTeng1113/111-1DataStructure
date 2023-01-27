@@ -1,5 +1,4 @@
 
-package bstree;
 
 class TreeNode {     // 樹節點類別
     int data;            // 節點資料
